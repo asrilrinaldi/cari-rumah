@@ -4,11 +4,17 @@
             <div class="card-body pb-0">
                 <div class="col-lg">
                     <h1>LOGIN</h1><br>
+                    <?php if (session()->getFlashdata('gagal')) : ?>
+                        <div class="alert alert-danger"><?= session()->getFlashdata('gagal') ?></div>
+                    <?php endif; ?>
+                    <?php if (session()->getFlashdata('sukses')) : ?>
+                        <div class="alert alert-info"><?= session()->getFlashdata('sukses') ?></div>
+                    <?php endif; ?>
                     <form method="post" action="<?= base_url(); ?>/login/login">
                         <?= csrf_field() ?>
                         <div class="form-group">
                             <label class="form-label">Email</label>
-                            <input type="text" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" name="email" id="password" placeholder="Email">
+                            <input type="text" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" name="email" id="email" placeholder="Email">
                             <div class="invalid-feedback">
                                 <?= $validation->getError('email'); ?>
                             </div>

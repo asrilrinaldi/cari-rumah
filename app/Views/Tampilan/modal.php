@@ -32,3 +32,23 @@
     </div>
 </div>
 <!-- END Modal Tambah Teacher -->
+
+<!-- Modal Logout  -->
+<div class="modal fade" id="modalLogout">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="<?= base_url('login/logout'); ?>" method="post">
+                <div class="modal-body">
+                    <div class="modal-logout">
+                        Apakah yakin ingin keluar?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-danger">Yakin</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- END Modal Logout  -->
