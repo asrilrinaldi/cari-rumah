@@ -16,7 +16,8 @@ class Admin extends BaseController
             'judul' => 'Admin'
         ];
         echo view('tampilan/header', $data);
-        echo view('tampilan/top_bar');
+        echo view('admin/sidebar');
+        echo view('admin/top_bar');
         echo view('admin/index', $data);
         echo view('tampilan/modal', $data);
         echo view('tampilan/footer');
