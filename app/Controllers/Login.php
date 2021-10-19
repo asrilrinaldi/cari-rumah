@@ -60,7 +60,7 @@ class Login extends BaseController
         $password = $this->request->getPost('password');
 
         $cekEmail = $userModel->where('email', $email)->first();
-        
+
         if ($cekEmail) {
             if ($cekEmail['password'] != $password) {
                 session()->setFlashdata('gagal', 'Password salah');
@@ -94,6 +94,6 @@ class Login extends BaseController
     {
         $session = session();
         $session->destroy(); //Hapus sesi
-        return redirect()->to('/login');
+        return redirect()->to('/');
     }
 }

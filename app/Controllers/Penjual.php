@@ -16,12 +16,55 @@ class Penjual extends BaseController
             'judul' => 'Penjual'
         ];
         echo view('tampilan/header', $data);
-        echo view('tampilan/top_bar');
+        echo view('penjual/sidebar', $data);
+        echo view('penjual/top_bar', $data);
         echo view('penjual/index', $data);
         echo view('tampilan/modal', $data);
-        echo view('tampilan/footer');
-        // echo view('tes', $data);
+        echo view('tampilan/footer', $data);
+
+        // echo view('penjual/index', $data);
     }
+    public function tambah()
+    {
+        if (session('level') == 1) {
+            return redirect()->to(site_url('admin'));
+        }
+        if (session('level') == 3) {
+            return redirect()->to(site_url('pembeli'));
+        }
+        $data = [
+            'judul' => 'Tambah Iklan'
+        ];
+        echo view('tampilan/header', $data);
+        echo view('penjual/sidebar', $data);
+        echo view('penjual/top_bar', $data);
+        echo view('penjual/tambah', $data);
+        echo view('tampilan/modal', $data);
+        echo view('tampilan/footer', $data);
+
+        // echo view('penjual/index', $data);
+    }
+    public function riwayat()
+    {
+        if (session('level') == 1) {
+            return redirect()->to(site_url('admin'));
+        }
+        if (session('level') == 3) {
+            return redirect()->to(site_url('pembeli'));
+        }
+        $data = [
+            'judul' => 'Tambah Iklan'
+        ];
+        echo view('tampilan/header', $data);
+        echo view('penjual/sidebar', $data);
+        echo view('penjual/top_bar', $data);
+        echo view('penjual/riwayat', $data);
+        echo view('tampilan/modal', $data);
+        echo view('tampilan/footer', $data);
+
+        // echo view('penjual/index', $data);
+    }
+
 
     public function login()
     {

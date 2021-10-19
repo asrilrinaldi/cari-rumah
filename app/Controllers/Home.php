@@ -16,14 +16,4 @@ class Home extends BaseController
         echo view('tampilan/footer');
         // echo view('tes', $data);
     }
-
-    public function login()
-    {
-        //validasi input
-        if ($this->validate([
-            'email' => 'required | valid_email',
-            'password' => 'required | min_length[8]'
-        ])) {
-        }
-    }
 }

@@ -33,11 +33,15 @@ class Filters extends BaseConfig
         'before' => [
             'auth' => ['except' => [
                 'login', 'login/*',
+                'home', 'home/*',
+                'daftar', 'daftar/*',
             ]],
             'honeypot',
             'csrf' => ['except' => [
-                '/login/auth',
-                '/login/logout'
+                '/login/login',
+                '/login/logout',
+                '/daftar/daftar',
+                '/daftar/simpan',
 
             ]],
 
