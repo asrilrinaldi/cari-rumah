@@ -2,7 +2,7 @@
       <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h2 class="font-weight-bold text-dark">Mau cari rumah?</h2<br>
+          <h2 class="font-weight-bold text-dark">Mau beli rumah?</h2<br>
 
               <h4 class="text-dark">Dapatkan info rumah di CariRumah.com</h4>
               <!-- Topbar Search -->
