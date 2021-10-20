@@ -3,7 +3,7 @@
         <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body pb-0">
                 <div class="col-lg">
-                    <h1>LOGIN</h1><br>
+                    <h3 class="text-center"><i class="fa fa-house-user"></i> CariRumah <sup>.com</sup></h3>
                     <?php if (session()->getFlashdata('gagal')) : ?>
                         <div class="alert alert-danger"><?= session()->getFlashdata('gagal') ?></div>
                     <?php endif; ?>

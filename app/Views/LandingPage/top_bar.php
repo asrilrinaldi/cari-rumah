@@ -1,8 +1,9 @@
  <!-- Topbar -->
- <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+ <nav class="navbar sticky-top navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
 
      <div class="sidebar-brand-text mx-3">
-         <h3>CariRumah <sup>.com</sup></h3>
+         <h3><i class="fa fa-house-user"></i> CariRumah <sup>.com</sup></h3>
      </div>
      <!-- Topbar Navbar -->
      <ul class="navbar-nav ml-auto">

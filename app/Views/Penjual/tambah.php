@@ -4,12 +4,17 @@
             <div class="card-body pb-0">
                 <div class="col-lg">
                     <h4>Pasang Iklan</h4><br>
-                    <?php if (session()->getFlashdata('gagal')) : ?>
-                        <div class="alert alert-danger"><?= session()->getFlashdata('gagal') ?></div>
-                    <?php endif; ?>
-                    <?php if (session()->getFlashdata('sukses')) : ?>
-                        <div class="alert alert-info"><?= session()->getFlashdata('sukses') ?></div>
-                    <?php endif; ?>
+                    <?php if (session()->get('sukses')) :  ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong><?= session()->getFlashdata('sukses') ?></strong>
+                        </div>
+                        <script>
+                            $("alert").alert();
+                        </script>
+                    <?php endif;  ?>
                     <form method="post" action="<?= base_url(); ?>/penjual/iklan" enctype="multipart/form-data">
                         <?= csrf_field() ?>
                         <div class="form-group">

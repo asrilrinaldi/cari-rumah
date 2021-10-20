@@ -25,7 +25,8 @@ class Penjual extends BaseController
             return redirect()->to(site_url('pembeli'));
         }
         $data = [
-            'judul' => 'Penjual'
+            'judul' => 'Penjual',
+            'iklan' => $this->model->getAllData()
         ];
         helper(['form']);
         echo view('tampilan/header', $data);
