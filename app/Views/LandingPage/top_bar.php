@@ -11,7 +11,7 @@
          <!-- Nav Item - User Information -->
 
          <div class="container-fluid">
-             <a href="login" class="btn btn-primary"><i class="fas fa-sign-in-alt fa-fw"></i>&nbsp;Masuk</a>
+             <a href="login" class="btn btn-success"><i class="fas fa-sign-in-alt fa-fw"></i>&nbsp;Masuk</a>
          </div>
 
      </ul>

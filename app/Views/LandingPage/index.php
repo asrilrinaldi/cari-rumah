@@ -23,8 +23,13 @@
 
                               </div>
 
-                              <div class=" card-footer">
-                                  <p class="card-title text-gray-800"><?= substr($row['nama'], 0, 30); ?>...</p>
+                              <div class=" card-footer bg-white">
+                                  <label class="border border-secondary rounded-right text-dark">&nbsp;<?= $row['sertifikat']; ?> &nbsp;</label>
+                                  <label class="border border-secondary rounded-right text-dark">&nbsp; <?= $row['kamar']; ?> Kamar &nbsp;</label>
+
+                                  <div class="col text-right">
+                                      <a href="<?= base_url('login'); ?>" style="color: green;">Selengkapnya</a>
+                                  </div><br>
                               </div>
                           </div>
                       </div>
