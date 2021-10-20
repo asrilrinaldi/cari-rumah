@@ -42,6 +42,8 @@ class Filters extends BaseConfig
                 '/login/logout',
                 '/daftar/daftar',
                 '/daftar/simpan',
+                '/penjual/iklan',
+                '/penjual/tambah',
 
             ]],
 
