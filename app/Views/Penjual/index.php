@@ -1,8 +1,5 @@
       <!-- Begin Page Content -->
       <div class="container-fluid">
-
-
-
           <div class="row">
               <?php foreach ($iklan as $row) :  ?>
                   <!-- Earnings (Monthly) Card Example -->
